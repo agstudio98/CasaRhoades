@@ -1,3 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+@theme {
+  --font-logo: "Trade Winds", cursive;
+  --font-text: "Alumni Sans", sans-serif;
+  
+  --color-mono-50: #f8f8f8;
+  --color-mono-100: #ededed;
+  --color-mono-200: #dcdcdc;
+  --color-mono-300: #bdbdbd;
+  --color-mono-400: #989898;
+  --color-mono-500: #7b7b7b;
+  --color-mono-600: #626262;
+  --color-mono-700: #4a4a4a;
+  --color-mono-800: #2d2d2d;
+  --color-mono-900: #1a1a1a;
+  --color-mono-950: #0a0a0a;
+}
+
+@layer base {
+  body {
+    @apply bg-mono-950 text-mono-100 font-text overflow-x-hidden;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-text uppercase tracking-widest;
+  }
+
+  a {
+    @apply font-text transition-all duration-300;
+  }
+
+  .logo-font {
+    font-family: var(--font-logo);
+  }
+
+  /* Brutalist utilities */
+  .brutalist-border {
+    @apply border-2 border-mono-100 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)];
+  }
+
+  .brutalist-card {
+    @apply bg-mono-900 border-2 border-mono-100 p-6 shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] transition-all hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)];
+  }
+}
+
