@@ -27,9 +27,9 @@ import { Component } from '@angular/core';
         </div>
         
         <div class="flex-1 relative">
-           <div class="w-full aspect-[4/5] brutalist-border bg-mono-800 rotate-3 flex items-center justify-center">
-             <img src=""
-           </div>
+            <div class="w-full aspect-[4/5] brutalist-border bg-mono-800 rotate-3 flex items-center justify-center overflow-hidden">
+              <img src="/workshop.png" alt="Workshop de Primavera" class="w-full h-full object-cover" />
+            </div>
            <!-- Cartographic lines -->
            <div class="absolute -top-10 -right-10 w-40 h-40 border border-mono-100/20 rounded-full"></div>
            <div class="absolute -bottom-10 -left-10 w-60 h-60 border border-mono-100/10 rounded-full"></div>
